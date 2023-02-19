@@ -1,0 +1,577 @@
+/* ===== Connection Fonts ===== */
+
+@font-face {
+    font-family: 'Larsseit';
+    src: url(../fonts/Larsseit/Larsseit.woff2) format('woff2'),
+         url(../fonts/Larsseit/Larsseit.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Larsseit-bold';
+    src: url(../fonts/Larsseit/Larsseit-Bold.woff2) format('woff2'),
+         url(../fonts/Larsseit/Larsseit-Bold.woff) format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Larsseit-light';
+    src: url(../fonts/Larsseit/Larsseit-Light.woff2) format('woff2'),
+         url(../fonts/Larsseit/Larsseit-Light.woff) format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Larsseit-medium';
+    src: url(../fonts/Larsseit/Larsseit-Medium.woff2) format('woff2'),
+         url(../fonts/Larsseit/Larsseit-Medium.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* ===== Colors ===== */
+:root {
+     /* ===== Font Family ===== */
+
+    --ff-Larsseit: 'Larsseit', sans-serif;
+    --ff-Larsseit-bold: 'Larsseit-bold', sans-serif;
+    --ff-Larsseit-light: 'Larsseit-light', sans-serif;
+    --ff-Larsseit-medium: 'Larsseit-medium', sans-serif;
+
+     /* ===== Background ===== */
+
+    --bg-cream: #F4F9E2;
+    --bg-pink: #FFE2DE;
+    --bg-green-lt: #C4E769;
+    --bg-blue-lt: #62D0DF;
+    --bg-blue: #0052C1;
+    --bg-blue-text:#006dff;
+    --bg-blue-hv: #22356F;
+    --bg-grey: #DEE1FF;
+    --bg-violet: #8F00FF;
+    --bg-orange: #F9B640;
+    --bg-orange-secondary: #E9B730;
+
+    /* ===== Colors ===== */
+
+    --color-primary: #22356F;
+    --color-primary-lt: rgba(34, 53, 111, 0.5);
+    --color-secondary: rgba(34, 53, 111, 0.5);
+    --color-blue: #006DFF;
+    --color-blue-lt: #62D0DF;
+    --color-white: #FFFFFF;
+    --color-orange-lt: #FAB63E;
+}
+/* ===== default style ===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+
+    font-family: var(--ff-Larsseit);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-primary);
+}
+
+/* ===== Backgrounds selectors ===== */
+.bg-blue {
+    background-color: var(--bg-blue);
+}
+
+.bg-pink {
+    background-color: var(--bg-pink);
+}
+
+.bg-green-lt {
+    background-color: var(--bg-green-lt);
+}
+
+.bg-blue-lt {
+    background-color: var(--bg-blue-lt);
+}
+/* ===== Backgrounds selectors END ===== */
+
+.container {
+    display: block;
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* ===== Header ===== */
+.header {
+    width: 1440px;
+    height: auto;
+    padding-top: 27px;
+    background: var(--bg-cream);
+    /* z-index: 3; */
+}
+
+.container-header {
+    display: flex;
+
+}
+
+.bubble-menu {
+    display: inherit;
+    align-items: center;
+    width: auto;
+    height: auto;
+    font-family: var(--ff-Larsseit-bold);
+    font-size: 24px;
+    line-height: 27px;
+    color: var(--color-blue-lt);
+    margin-left: 179px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    max-width: 240px;
+    margin-left: 321px;
+}
+
+.nav a {
+    color: var(--color-primary);
+    padding: 0 7px;
+}
+
+.nav a:last-child {
+    margin: 0;
+    padding: 0 7px;
+}
+
+.nav a:hover {
+    color: var(--color-primary);
+    border-bottom: 1px solid;
+    padding-bottom: 14px;
+}
+
+.menu {
+    display: flex;
+    font-family: var(--ff-Larsseit);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.nav-item {
+    margin-right: 11px;
+    z-index: 1;
+}
+
+.header-btn {
+    display: flex;
+    align-items: center;
+    margin-left: 319px;
+    padding: 20px 30px;
+    font-family: var(--ff-Larsseit);
+    color: var(--color-white);
+    background-color: var(--color-blue-lt);
+    border-radius: 50px;
+    font-size: 14px;
+    line-height: 16px;
+    z-index: 1;
+}
+/* ===== Header end ===== */
+
+/* ===== Main ===== */
+
+.container-whoami {
+    display: block;
+}
+
+.whoami {
+    max-width: 1440px;
+    height: 733px;
+    display: flex;
+    background-color: var(--bg-cream);
+    margin-bottom: 33px;
+}
+
+/* ======== Who Am I ======== */
+
+/* ===== Who Am I Info ===== */
+
+.whoami-info {
+    position: relative;
+    width: 780px;
+    height: 733px;
+}
+
+.whoami-bubble {
+    /* Размер и положение блока */
+    position: absolute;
+    width: 484px;
+    height: 64px;
+    left: 179px;
+    top: 167px;
+    margin-left: 0;
+}
+
+.whoami-title {
+    /* Размер и положение блока */
+    position: absolute;
+    width: 484px;
+    height: 167px;
+    left: 179px;
+    top: 231px;
+    /* Свойства шрифта */
+    font-size: 48px;
+    line-height: 53px;
+    letter-spacing: -0.035em;
+}
+
+.whoami-text {
+    /* Размер и положение блока */
+    position: absolute;
+    width: 469px;
+    height: 161px;
+    left: 179px;
+    top: 417px;
+    /* Свойства шрифта */
+    font-size: 24px;
+    line-height: 42px;
+    color: var(--bg-blue-hv);
+}
+
+.btns {
+    /* СВойства отображения display */
+    display: flex;
+    align-items: center;
+    /* Размер и положение блока */
+    position: absolute;
+    width: 340px;
+    height: 50px;
+    left: 179px;
+    top: 641px;
+}
+
+.whoami-btn {
+    /* Размер и положение блока */
+    padding: 13px 30px;
+    /* Background */
+    background-color: var(--bg-orange);
+    /* Свойства шрифта */
+    color: var(--color-white);
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+}
+
+.whatdoido-btn {
+    /* СВойства отображения display */
+    display: flex;
+    align-items: center;
+    /* Размер и положение блока */
+    margin-left: 38px;
+    width: 150px;
+    height: 43px;
+    /* Свойства шрифта */
+    color: var(--color-orange-lt);
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+}
+
+/* ===== Who Am I Image ===== */
+
+.whoami-img {
+    /* Размер и положение блока */
+    width: 660px;
+    height: 733px;
+    /* Background */
+    background-color: var(--color-white);
+}
+
+.img-whoami {
+    /* Размер и положение блока */
+    position: absolute;
+    width: 660px;
+    height: 810px;
+    top: 0;
+    right: 0;
+}
+
+/* ======== Who Am I End ======== */
+
+/* ======== Girl White ======== */
+
+/* ===== Girl White Info ===== */
+
+.girl-w {
+    display: flex;
+    position: relative;
+}
+
+.girl-w-info {
+    /* Размер и положение блока */
+    width: 915px;
+    height: 604px;
+    /* Background */
+    background-color: var(--bg-blue-lt);
+}
+
+.girl-w-title {
+    /* Размер и положение блока */
+    position: absolute;
+    width: 223px;
+    height: 51px;
+    left: 179px;
+    top: 151px;
+    /* Свойства шрифта */
+    color: var(--color-white);
+    font-size: 36px;
+    line-height: 27px;
+    letter-spacing: -0.006em;
+
+}
+
+/* не получилось как в макете */
+
+.girl-w-text {
+    /* Размер и положение блока */
+    position: absolute;
+    width: 555px;
+    height: 235px;
+    left: 179px;
+    top: 277px;
+    /* Свойства шрифта */
+    color: var(--color-white);
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 700;
+}
+
+.girl-w-text span {
+    /* Свойства шрифта переопределяем для части p */
+    /* width: auto;
+    height: auto; */
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/* ===== Girl White Image ===== */
+
+.girl-w-img {
+    /* Размер и положение блока */
+    width: 525px;
+    height: 600px;
+    background: url(../images/girl-w.png);
+}
+
+/* ======== Girl White End ======== */
+
+/* ======== About Us Start ======== */
+
+.aboutus {
+    /* Размер и положение блока */
+    display: block;
+    position: relative;
+    width: 1440px;
+    height: 361px;
+    /* Свойства шрифта */
+    color: var(--color-primary);
+}
+
+.aboutus-title {
+    /* Размер и положение блока */
+    position: absolute;
+    width: 93px;
+    height: auto;
+    left: 106px;
+    top: 156px;
+    /* Свойства шрифта */
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+}
+
+.aboutus-text {
+    /* Размер и положение блока */
+    position: absolute;
+    width: 592px;
+    height: 210px;
+    left: 424px;
+    bottom: 1px;
+    /* Свойства шрифта */
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.005em;
+}
+
+/* ======== About Us End ======== */
+
+/* ======== We Can Help ======== */
+
+.section-wecanhelp {
+    display: block;
+    position: relative;
+    width: 1440px;
+    height: 475px;
+    margin-bottom: 120px;
+}
+
+.wecanhelp {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wecanhelp-title {
+    width: 1440px;
+    height: 115px;
+    background-color: #fff;
+}
+
+.wecanhelp-head {
+    /* Размер и положение блока */
+    position: absolute;
+    top: 70px;
+    left: 620px;
+    /* Свойства шрифта */
+    color: var(--color-primary-lt);
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.06em;
+}
+
+.wecanhelp-cards {
+    /* Размер и положение блока */
+    display: flex;
+    flex-wrap: nowrap;
+    width: 1440px;
+    height: 360px;
+}
+
+.card {
+    /* Размер и положение блока */
+    position: relative;
+    width: 360px;
+    height: 360px;
+}
+
+.card-title {
+    /* Размер и положение блока */
+    position: absolute;
+    width: 255px;
+    height: 72px;
+    left: 52px;
+    top: 77px;
+    /* Свойства шрифта */
+    font-size: 32px;
+    line-height: 34px;
+    letter-spacing: -0.006em;
+    color: var(--color-white);
+    /* Подчеркивание сверху */
+    padding-top: 25px;
+    padding-left: 25px;
+    border-top: 1px solid var(--color-white);
+}
+
+.circle-orange {
+    /* Размер и положение блока */
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    top: 107px;
+    left: 54px;
+    border-radius: 50%;
+    background-color: var(--bg-orange-secondary);
+}
+
+/* ======== We Can Help End ======== */
+
+/* ===== Main end ===== */
+
+
+/* ===== Footer ===== */
+
+.footer {
+    /* Размер и положение блока */
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1440px;
+    height: 465px;
+} 
+
+.img-info {
+    /* Размер и положение блока */
+    width: 570px;
+    height: 380px;
+}
+
+.footer-cards {
+    /* Размер и положение блока */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 100px;
+    left: 640px;
+}
+
+.footer-card {
+    /* Размер и положение блока */
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 263px;
+    height: 210px;
+}
+
+.footer-title {
+    /* Размер и положение блока */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.footer-email {
+    padding-top: 12px;
+    color: var(--bg-blue-text);
+}
+
+.under-footer-info {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 1440px;
+    height: 80px;
+    background-color: var(--bg-blue-lt);
+}
+
+.copy-info {
+    position: absolute;
+    height: 22px;
+    left: 179px;
+    top: 32px;
+}
+
+.img-copy {
+    width: 9px;
+    height: 9px;
+}
+
+.copy {
+    /* Свойства шрифта */
+    font-size: 14px;
+    line-height: 11px;
+    letter-spacing: -0.006em;
+    color: var(--color-white);
+}
+
+/* ===== Footer end ===== */
+
